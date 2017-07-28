@@ -1,0 +1,542 @@
+<style type="text/css">
+	.card-header .control-label{
+		color : white !important;
+		font-size: 14px !important;
+	}
+	.search_btn{
+	    margin: 20px 1px 0px !important;
+	}
+	.form-group input{
+		color: white !important;
+	}
+	#map{
+		margin : 10px 0px;
+	}
+	.card-content{
+		max-width: none !important;
+	}
+	li{
+		padding: initial !important;
+	}
+	.events-content {
+		margin : initial !important;
+	}
+
+	.cd-horizontal-timeline {
+	    margin: 0px auto;
+	}
+
+	.card [data-background-color] a {
+	    color: black;
+	}
+	
+	/*play button*/
+
+	.pp_btn{
+		width: 100%;
+		text-align: center;
+	}
+
+	.play_btn, .pause_btn{
+		width: 70px !important;
+		height: 70px !important;
+	}
+
+	.events-content{
+		overflow: auto !important;
+		height: 300px !important;
+	}
+
+	.tbl_first_row{
+		background: #9931B1 !important;
+		color : white !important;
+	}
+
+	.edit_mode {
+	    margin-top: -20px;
+	}
+
+	.status_dropMenu{
+	    height: 150px;
+    	overflow: auto;
+	}
+
+	.datepicker td.active.active{
+		background: white !important;
+	}
+
+
+	/*gjklhk*/
+	body {
+   
+    line-height: 1.428571429;
+    
+}
+
+div {
+    display: block;
+}
+
+.bs-wizard-step{
+	width: 11%;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-xs-3 {
+  width: 25%;
+  float: left;
+  min-height: 1px;
+}
+.text-center {
+    text-align: center;
+}
+.bs-wizard > .bs-wizard-step > .progress {
+    position: relative;
+    border-radius: 0px;
+    height: 8px;
+    box-shadow: none;
+    margin: 20px 0;
+}
+.progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #AEAEAE;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+    width: 100%;
+    background: #9931B1;
+}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+    width: 0px;
+    box-shadow: none;
+    background: #AEAEAE;
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #AEAEAE;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+
+
+.bs-wizard {margin-top: 40px;}
+
+
+
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #9931B1; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #9931B1; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #AEAEAE;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #AEAEAE;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+
+
+.fixed-plugin {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 55px;
+    background: rgba(0,0,0,.3);
+    z-index: 1031;
+    border-radius: 0 8px 8px 0px;
+    text-align: center;
+}
+
+.fixed-plugin .fa-upload {
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    width: auto;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*spinner*/
+
+
+</style>
+
+<div class="page-loader" ng-show="loader">
+    <div class="preloader pls-blue">
+        <img src="assets/img/loading.gif" width="50" height="50">
+
+        <p>Please wait...</p>
+    </div>
+</div>
+
+<div class="wrapper">
+
+<!-- <div ng-repeat="playerPerTeam in playersToFilter() | filter:filterTeams">
+    <b>{{playerPerTeam.team}}</b>
+    <li ng-repeat="player in players | filter:{team: playerPerTeam.team}">{{player.name}}</li>      
+         
+</div> -->
+
+
+		<div class="fixed-plugin">
+			<div class="dropdown show-dropdown open">
+				<a href="#/upload" data-toggle="dropdown" aria-expanded="true">
+				<i class="fa fa-upload fa-2x"> </i>
+				</a>
+			</div>
+		</div>
+	    
+	    <div class="main-panel" style="position: relative;">
+			
+	        <div class="content">
+	        	
+
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <div class="card">
+	                            <div class="card-header" data-background-color="purple">
+	                                <div class="row">
+                                        <div class="col-md-4">
+                                       
+											<div class="form-group label-floating">
+												<label class="control-label">Vehicle Id</label>
+												<input type="text" class="form-control inp_drop3" ng-model="vechileIdInp">
+											</div>
+											<li class="dropdown drop3" style="list-style-type: none;">
+												<ul class="dropdown-menu" style="height: 300px;overflow: auto;">
+													<li ng-click="getVechileIdFun(value.id,value.name)" ng-repeat="(key, value) in vehicleDetails | filter : vechileIdInp"><a href="#/">{{value.name}}</a></li>
+													<li ng-click="close('drop3')" ng-show="(vehicleDetails | filter:vechileIdInp).length == 0"><a href="#/">No Data Found...!</a></li>
+												</ul>
+											</li>
+										 	
+										</li>
+                                        </div>
+                                        <div class="col-md-3">
+											<div class="form-group label-floating">
+												<label class="control-label">Date</label>
+												<input type="text" class="form-control datefiled" ng-model="date">
+											</div>
+                                        </div>
+                                        <div class="col-md-3">
+											<div class="form-group label-floating">
+												<label class="control-label">Shift Details</label>
+												<input type="text" class="form-control inp_drop" ng-model="shiftDetails" readonly="">
+											</div>
+											<li class="dropdown drop1" style="list-style-type: none;">
+												<ul class="dropdown-menu">
+													<li ng-click="getShift(1,'Shift 1')"><a href="#/">Shift 1 (06 AM - 14 PM)</a></li>
+													<li ng-click="getShift(2,'Shift 2')"><a href="#/">Shift 2 (14 PM - 22 PM)</a></li>
+													<li ng-click="getShift(3,'Shift 3')"><a href="#/">Shift 3 (22 PM - 06 AM)</a></li>
+												</ul>
+											</li>
+                                        </div>
+                                        <div class="col-md-2" style="width: initial !important;">
+                                        	
+											<button type="submit" class="btn btn-white btn-round btn-just-icon search_btn" ng-click="getVehicleFun()">
+												<i class="material-icons">search</i><div class="ripple-container"></div>
+											</button>
+
+											<button type="submit" class="btn btn-white btn-round btn-just-icon search_btn" ng-click="clearForm()">
+												<i class="material-icons">close</i><div class="ripple-container"></div>
+											</button>
+                                        </div>
+                                        
+                                    </div>
+	                            </div>
+	                            <div class="card-content">
+	                               
+
+	                            	<div id="map" style="width: 100%; height: 400px;"></div>
+
+	                            	<div class="pp_btn">
+	                            		<div ng-if="flag=='true'">
+	                            		<img src="assets/img/play-button.svg" class="play_btn" ng-click="play()">
+	                            		<h4>Paused</h4>
+	                            		</div>
+	                            		<div ng-if="flag=='false'" >
+	                            			<img src="assets/img/pause.svg" class="pause_btn" ng-click="pause()">
+	                            			<h4>Playing</h4>
+	                            		</div>
+	                            		<div ng-if="flag=='stop'" >
+	                            			<img src="assets/img/stop.svg" class="pause_btn">
+	                            			<h4>Stopped</h4>
+	                            		</div>
+									</div>
+									
+									<div class="row bs-wizard" style="border-bottom:0;">
+                
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'06:00'}}">
+						                  <div class="text-center bs-wizard-stepnum">6 AM </div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                  
+						                </div>
+						                
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'07:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">7 AM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                  
+						                </div>
+
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'08:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">8 AM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                 
+						                </div>
+
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'09:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">9 AM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                 
+						                </div>
+
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'10:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">10 AM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                 
+						                </div>
+
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'11:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">11 AM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                 
+						                </div>
+
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'12:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">12 PM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                 
+						                </div>
+						                
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'13:00'}}"><!-- complete -->
+						                  <div class="text-center bs-wizard-stepnum">13 PM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#/" class="bs-wizard-dot"></a>
+						                  
+						                </div>
+						                
+						                <div class="col-xs-1 bs-wizard-step {{timeData | datefilter:'14:00'}}"><!-- active -->
+						                  <div class="text-center bs-wizard-stepnum">14 PM</div>
+						                  <div class="progress"><div class="progress-bar"></div></div>
+						                  <a href="#" class="bs-wizard-dot"></a>
+						                  
+						                </div>
+					            	</div>
+
+					            	
+
+					            	<div class="card-content table-responsive events-content">
+									    <table class="table table-hover table-striped">
+									        <thead class="text-primary">
+									        	<th>S.No</th>
+									        	<th>Vehicle Id</th>
+									        	<th>Attribute Id</th>
+									        	<th>GPS Record Time</th>
+												<th>Latitude</th>
+									        	<th>Longitude</th>
+												<th>Attribute Value</th>
+												<th>Speed</th>
+												<th>GPS Id</th>
+												<!-- <th>Updated ON</th> -->
+												<th>Status</th>
+												<th>Loading Equipment Id</th>
+												<th>Location</th>
+									        </thead>
+									        <tbody>
+									        	<tr ng-repeat="(key, value) in vehicleDatas" ng-class="$index==0 ? 'tbl_first_row' : '' ">
+									        		<td> {{$index+1}} </td>
+									        		<td> {{value.vechileId}} </td>
+									        		<td> {{value.attId}} </td>
+									        		<td> {{value.gprsRcTime}} </td>
+									        		<td> {{value.lat}} </td>
+									        		<td> {{value.lng}} </td>
+									        		<td> {{value.attribVal}} </td>
+									        		<td> {{value.speed}} </td>
+									        		<td> {{value.gprsId}} </td>
+									        		<!-- <td> {{value.updatedOn}} </td> -->
+									        		<td> 
+									            		<div ng-if="flag=='false' || $index!=0 || flag=='stop'">
+									            			{{value.status}} 
+									            		</div>
+									            		<div ng-if="flag=='true' && $index==0">
+									            			<div class="form-group">
+																<input type="text" class="form-control edit_mode inp_drop2" ng-model="value.status">
+															</div>
+															<li class="dropdown drop2" style="list-style-type: none;">
+																<ul class="dropdown-menu status_dropMenu">
+																	<li ng-click="getStatus(value.status,value.loadEquiId,value.location)" ng-repeat="(key,value) in statusData"><a href="#/">{{value.status}}</a></li>
+																</ul>
+															</li>
+									            		</div>
+									        		</td>
+									        		<td>
+									        			<div ng-if="flag=='false' || $index!=0 || flag=='stop'">
+									            			{{value.loadEquiId}} 
+									            		</div>
+									            		<div ng-if="flag=='true' && $index==0">
+									            			<div class="form-group">
+																<input type="text" class="form-control edit_mode " ng-model="value.loadEquiId" ng-blur="getStatus(value.status,value.loadEquiId,value.location)">
+															</div>
+									            		</div>
+									        		</td>
+									        		<td> 
+									        			<div ng-if="flag=='false' || $index!=0 || flag=='stop'">
+									            			{{value.location}} 
+									            		</div>
+									            		<div ng-if="flag=='true' && $index==0">
+									            			<div class="form-group">
+																<input type="text" class="form-control edit_mode" ng-model="value.location" ng-blur="getStatus(value.status,value.loadEquiId,value.location)">
+															</div>
+									            		</div>
+									        		</td>
+									        		<td>
+									        			<div ng-if="flag=='true' && $index==0">
+									        				<button type="button" rel="tooltip" title="" class="btn btn-success btn-simple btn-xs" data-original-title="Edit Profile" ng-click="play()" style="color: white !important;">
+																 <i class="fa fa-edit"></i>
+															<div class="ripple-container"></div></button>
+									        			</div>
+									        		</td>
+									        	</tr>
+									        </tbody>
+									    </table>
+									</div>
+																	
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	    </div>
+	</div>
+
+
+
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+    		$('.datepicker').datepicker();
+
+
+    		$('.inp_drop').focus(function(){
+    			$('.drop1').addClass('open');
+    		});
+
+    		$('.inp_drop3').focus(function(){
+    			$('.drop3').addClass('open');
+    		});
+
+    		/*$('.inp_drop').blur(function(){
+    			$('.drop1').removeClass('open');
+    		});*/
+
+    		/*$('.inp_drop').change(function(){
+    			$('.drop1').removeClass('open');
+    		});*/
+
+    		/*$('.drop1').click(function(){
+    			$('.drop1').removeClass('open');
+    		});*/
+
+    		$(document).on('focus', ".inp_drop2", function () {
+    			$('.drop2').addClass('open');
+    		});
+
+    		/*$(document).on('blur', ".inp_drop2", function () {
+    			$('.drop2').removeClass('open');
+    		});*/
+
+    		/*$(document).on('click', ".drop2", function () {
+    			$('.drop2').removeClass('open');
+    		});
+*/
+			// Javascript method's body can be found in assets/js/demos.js
+        	//demo.initGoogleMaps();
+
+        	/*$('.play_btn').hide();
+        	$('.play_btn').click(function(){
+        		$('.pause_btn').show();
+        		$('.play_btn').hide();
+        	});
+        	$('.pause_btn').click(function(){
+        		$('.play_btn').show();
+        		$('.pause_btn').hide();
+        	});*/
+
+        	$('.datefiled').datepicker({
+				format:'yyyy-mm-dd'
+			});
+			//$('.datepicker').datepicker()
+			/*$('.datefiled').change(function(){
+				console.log('1');
+    			$('.datepicker').removeClass('open');
+    			$('.datepicker').css('display','none');
+    		});*/
+
+			/*$('.day').click(function(){ $('.datepicker').css('display','none'); });
+
+			$('.datefiled').focus(function(){
+			 	$('.day').click(function(){ $('.datepicker').css('display','none'); }); 
+			});
+			setTimeout(datetimrpicker, 3000);
+     function datetimrpicker()
+     {
+      $('.day').click(function(){ $('.datepicker').css('display','none'); });
+     }*/
+
+     	$(document).on('click', ".day ", function () {
+     		console.log('123');
+			$('.datepicker').css('display','none');
+		});
+
+     	/*$('.day').click(function(){
+     		$('.datepicker').css('display','none');
+     	})*/
+        	
+    	});
+	</script>
